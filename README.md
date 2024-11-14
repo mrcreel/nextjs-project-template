@@ -106,36 +106,20 @@ Output:
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;iii. Follow along with [this post](https://dev.to/sahanonp/how-to-setup-semantic-release-with-github-actions-31f3) to set token in repo.
 
-GitHub Actions: Create a .github/workflows/release.yml file with the following content
+&nbsp;&nbsp;E. Install and Setup [Prettier](https://www.npmjs.com/package/prettier), [ESLint](https://www.npmjs.com/package/), [Husky](https://www.npmjs.com/package/), and [lint-staged](https://www.npmjs.com/package/)
 
-```yml
-    
-name: Release
+> From [Setting up Prettier, ESLint, Husky, and lint-staged with a Next.js and TypeScript project](https://medium.com/@vaibhavsinha619/setting-up-prettier-eslint-husky-and-lint-staged-with-a-next-js-and-typescript-project-75d1a804e1fd)
 
-on:
-  push:
-    branches:
-      - main
+&nbsp;&nbsp;&nbsp;&nbsp;1. install Prettier and ESLint
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Run release
-        run: npx semantic-release
+```bash
+    pnpm i -D prettier eslint eslint-config-prettier eslint-plugin-prettier eslint-config-airbnb
 ```
 
+// Finish Husky eslint, prettier lint-staged
 
 
-
-&nbsp;&nbsp;B. Install and Setup [](https://www.npmjs.com/package/)
+&nbsp;&nbsp;A. Install and Setup [](https://www.npmjs.com/package/)
 
 &nbsp;&nbsp;&nbsp;&nbsp;A. 
 
